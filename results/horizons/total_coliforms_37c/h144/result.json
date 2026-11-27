@@ -1,0 +1,68 @@
+{
+  "horizon": 144,
+  "n": 50,
+  "n_expected": 50,
+  "scores": {
+    "n": 50,
+    "rmse": 7.413841156416383,
+    "mae": 4.765648860931396,
+    "sigma_evaluation": 9.62415710594959,
+    "nrmse": 0.7703366720638002,
+    "r2": 0.4065814116736691,
+    "baselines": {
+      "Training mean": {
+        "n": 50,
+        "rmse": 9.743394349837644,
+        "mae": 6.984912280701753,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 1.0123893700586353,
+        "r2": -0.02493223660772026
+      },
+      "Calendar": {
+        "n": 50,
+        "rmse": 7.6898429115215965,
+        "mae": 5.058995503872976,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 0.7990146905195247,
+        "r2": 0.3615755243339883
+      },
+      "Calendar + prior": {
+        "n": 50,
+        "rmse": 7.440764507319221,
+        "mae": 4.880374955131934,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 0.7731341483109611,
+        "r2": 0.40226358871548484
+      },
+      "Persistence": {
+        "n": 50,
+        "rmse": 9.316651759081692,
+        "mae": 5.28,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 0.9680485944397353,
+        "r2": 0.06288191880325278
+      },
+      "Recent linear trend": {
+        "n": 50,
+        "rmse": 10.491328443421441,
+        "mae": 6.605959052865901,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 1.0901036140542397,
+        "r2": -0.18832588937411487
+      },
+      "Earlier-years seasonal mean": {
+        "n": 50,
+        "rmse": 7.822407522510172,
+        "mae": 4.9442063492063495,
+        "sigma_evaluation": 9.62415710594959,
+        "nrmse": 0.812788843365245,
+        "r2": 0.3393742961009871
+      }
+    },
+    "best_baseline": "Calendar + prior",
+    "skill": 0.0036183581507457374,
+    "baselines_beaten": 6
+  },
+  "reference_history": "all eligible nominal training laboratory observations",
+  "zero_horizon_reproduced": null
+}

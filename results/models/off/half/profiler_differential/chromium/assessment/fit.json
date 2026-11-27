@@ -1,0 +1,113 @@
+{
+  "metrics": {
+    "n": 25,
+    "rmse": 0.03998687367192937,
+    "mae": 0.03444537616610527,
+    "sigma_evaluation": 0.03265210559826119,
+    "nrmse": 1.2246338464021989,
+    "r2": -0.4997280577538443
+  },
+  "details": [
+    {
+      "family": "gp",
+      "variant": "gp_03",
+      "input_features": [
+        "Pfl - pH",
+        "Pfl - DO (% Sat)",
+        "Pfl - fDOM (RFU)",
+        "Pfl - fDOM (QSU)",
+        "Pfl - DO (% Sat) [35 m]",
+        "Chromium (µg/L)_state"
+      ],
+      "seed": 0,
+      "n_train_observations": 31,
+      "n_train_rows": 31,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2023041712.csv",
+        "segment_2023042412.csv",
+        "segment_2023050212.csv",
+        "segment_2023051512.csv",
+        "segment_2023052212.csv",
+        "segment_2023053012.csv",
+        "segment_2023060512.csv",
+        "segment_2023061212.csv",
+        "segment_2023070312.csv",
+        "segment_2023071012.csv",
+        "segment_2023071712.csv",
+        "segment_2023072412.csv",
+        "segment_2023073112.csv",
+        "segment_2023080712.csv",
+        "segment_2023081412.csv",
+        "segment_2023082112.csv",
+        "segment_2023090412.csv",
+        "segment_2023091112.csv",
+        "segment_2023091812.csv",
+        "segment_2023092512.csv",
+        "segment_2023100212.csv",
+        "segment_2023100912.csv",
+        "segment_2023101612.csv",
+        "segment_2023102312.csv",
+        "segment_2023103012.csv",
+        "segment_2023110612.csv",
+        "segment_2024043012.csv",
+        "segment_2024050612.csv",
+        "segment_2024051312.csv",
+        "segment_2024052112.csv",
+        "segment_2024052712.csv"
+      ],
+      "steps": 41,
+      "hyperparameters": {
+        "kernel": "matern52+linear",
+        "ard": true,
+        "ard_min_samples_per_dim": 1.0,
+        "input_standardize": true,
+        "target_standardize": true,
+        "early_stop_metric": "val_rmse",
+        "early_stop_alpha": 0.5,
+        "lengthscale_min": 0.05,
+        "lengthscale_max": 10.0,
+        "noise_min": 1e-05,
+        "noise_max": 1.0,
+        "outputscale_prior": {
+          "type": "gamma",
+          "shape": 2.0,
+          "rate": 0.15
+        },
+        "noise_prior": {
+          "type": "gamma",
+          "shape": 1.5,
+          "rate": 0.5
+        },
+        "learning_rate": 0.01,
+        "num_epochs": 250,
+        "patience": 20,
+        "max_train_size": 5000,
+        "early_stop_min_epochs": 50,
+        "revision_fixed_steps": 41
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 25
+    }
+  ],
+  "coverage": {
+    "expected_observations": 31,
+    "scored_observations": 25,
+    "lost_observations": 6,
+    "lost_fraction": 0.19354838709677424,
+    "available_in_any_seed": 25,
+    "excluded_due_to_seed_disagreement": 0,
+    "seed_coverage": [
+      {
+        "seed": 0,
+        "n_available": 25
+      }
+    ],
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+  },
+  "selected_by": "training-only chronological validation",
+  "assessment_role": "chronological_later_evaluation"
+}

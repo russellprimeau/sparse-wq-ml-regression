@@ -1,0 +1,44 @@
+targets:
+  Color: color
+  Turbidity (FNU): turbidity
+  pH: ph
+  E.coli (CFU/100mL): e_coli
+  Intestinal enterococci (CFU/100mL): intestinal_enterococci
+  Colony Count 22°C (CFU/mL): colony_count_22c
+  Total coliforms 37°C (CFU/100mL): total_coliforms_37c
+  Arsenic (µg/L): arsenic
+  Lead (µg/L): lead
+  Cadmium (µg/L): cadmium
+  Copper filtered (mg/L): copper_filtered
+  Chromium (µg/L): chromium
+  Nickel (µg/L): nickel
+  Zinc (µg/L): zinc
+predictors:
+  always:
+  - Wind speed x (m/s)
+  - Wind speed y (m/s)
+  - Atmospheric pressure (mBar)
+  - Longwave (IR) radiation (W/m2)
+  - Shortwave (solar) radiation (W/m2)
+  - 24hr precipitation total (mm)
+  - Air temperature (°C)
+  - Humidity (%)
+  - SCADA - pH
+  - SCADA - Temperature (°C)
+  profiler:
+  - Pfl - Water temperature (°C)
+  - Pfl - Sp Cond (microS_cm)
+  - Pfl - pH
+  - Pfl - DO (% Sat)
+  - Pfl - Turbidity (FNU)
+  - Pfl - fDOM (RFU)
+  - Pfl - fDOM (QSU)
+  - Pfl - Water temperature (°C) [35 m]
+  - Pfl - Sp Cond (microS_cm) [35 m]
+  - Pfl - pH [35 m]
+  - Pfl - DO (% Sat) [35 m]
+  - Pfl - Turbidity (FNU) [35 m]
+  - Pfl - fDOM (RFU) [35 m]
+  - Pfl - fDOM (QSU) [35 m]
+windows:
+  fallback_length_hours: 168

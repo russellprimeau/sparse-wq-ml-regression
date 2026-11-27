@@ -1,0 +1,4 @@
+# Preserve bytes of scientific files checked by the supplied integrity manifests.
+data/raw/** -text
+results/** -text
+config/** -text

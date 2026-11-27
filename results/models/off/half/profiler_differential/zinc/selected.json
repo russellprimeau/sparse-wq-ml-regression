@@ -1,0 +1,277 @@
+{
+  "features": [
+    "Atmospheric pressure (mBar)",
+    "24hr precipitation total (mm)",
+    "Air temperature (°C)",
+    "Humidity (%)",
+    "Pfl - pH",
+    "Pfl - DO (% Sat)",
+    "Pfl - fDOM (QSU)",
+    "Pfl - Sp Cond (microS_cm) [35 m]",
+    "Zinc (µg/L)_state"
+  ],
+  "variant": "gp_03",
+  "seeds": [
+    0
+  ],
+  "objective": 1.6685902131287762,
+  "info": {
+    "metrics": {
+      "n": 13,
+      "rmse": 2.4716139002220854,
+      "mae": 1.5978107599111704,
+      "sigma_evaluation": 2.0066752507892693,
+      "nrmse": 1.2316960102288328,
+      "r2": -0.5170750616136246
+    },
+    "objective": 1.6685902131287762,
+    "details": [
+      {
+        "family": "gp",
+        "variant": "gp_03",
+        "input_features": [
+          "Atmospheric pressure (mBar)",
+          "24hr precipitation total (mm)",
+          "Air temperature (°C)",
+          "Humidity (%)",
+          "Pfl - pH",
+          "Pfl - DO (% Sat)",
+          "Pfl - fDOM (QSU)",
+          "Pfl - Sp Cond (microS_cm) [35 m]",
+          "Zinc (µg/L)_state"
+        ],
+        "seed": 0,
+        "n_train_observations": 16,
+        "n_train_rows": 16,
+        "horizon": 0,
+        "uncertainty": false,
+        "training_observations": [
+          "segment_2023041712.csv",
+          "segment_2023042412.csv",
+          "segment_2023050212.csv",
+          "segment_2023051512.csv",
+          "segment_2023053012.csv",
+          "segment_2023060512.csv",
+          "segment_2023061212.csv",
+          "segment_2023070312.csv",
+          "segment_2023071012.csv",
+          "segment_2023071712.csv",
+          "segment_2023072412.csv",
+          "segment_2023073112.csv",
+          "segment_2023080712.csv",
+          "segment_2023081412.csv",
+          "segment_2023082112.csv",
+          "segment_2023090412.csv"
+        ],
+        "steps": 250,
+        "hyperparameters": {
+          "kernel": "matern52+linear",
+          "ard": true,
+          "ard_min_samples_per_dim": 1.0,
+          "input_standardize": true,
+          "target_standardize": true,
+          "early_stop_metric": "val_rmse",
+          "early_stop_alpha": 0.5,
+          "lengthscale_min": 0.05,
+          "lengthscale_max": 10.0,
+          "noise_min": 1e-05,
+          "noise_max": 1.0,
+          "outputscale_prior": {
+            "type": "gamma",
+            "shape": 2.0,
+            "rate": 0.15
+          },
+          "noise_prior": {
+            "type": "gamma",
+            "shape": 1.5,
+            "rate": 0.5
+          },
+          "learning_rate": 0.01,
+          "num_epochs": 250,
+          "patience": 20,
+          "max_train_size": 5000,
+          "early_stop_min_epochs": 50,
+          "revision_fixed_steps": 250
+        },
+        "output_constraint": "nonnegative-measured-level-v1",
+        "negative_prediction_floors": 0,
+        "prediction_clips": 0,
+        "n_available_predictions": 8,
+        "fold": 1
+      },
+      {
+        "family": "gp",
+        "variant": "gp_03",
+        "input_features": [
+          "Atmospheric pressure (mBar)",
+          "24hr precipitation total (mm)",
+          "Air temperature (°C)",
+          "Humidity (%)",
+          "Pfl - pH",
+          "Pfl - DO (% Sat)",
+          "Pfl - fDOM (QSU)",
+          "Pfl - Sp Cond (microS_cm) [35 m]",
+          "Zinc (µg/L)_state"
+        ],
+        "seed": 0,
+        "n_train_observations": 24,
+        "n_train_rows": 24,
+        "horizon": 0,
+        "uncertainty": false,
+        "training_observations": [
+          "segment_2023041712.csv",
+          "segment_2023042412.csv",
+          "segment_2023050212.csv",
+          "segment_2023051512.csv",
+          "segment_2023053012.csv",
+          "segment_2023060512.csv",
+          "segment_2023061212.csv",
+          "segment_2023070312.csv",
+          "segment_2023071012.csv",
+          "segment_2023071712.csv",
+          "segment_2023072412.csv",
+          "segment_2023073112.csv",
+          "segment_2023080712.csv",
+          "segment_2023081412.csv",
+          "segment_2023082112.csv",
+          "segment_2023090412.csv",
+          "segment_2023091812.csv",
+          "segment_2023092512.csv",
+          "segment_2023100212.csv",
+          "segment_2023100912.csv",
+          "segment_2023101612.csv",
+          "segment_2023102312.csv",
+          "segment_2023103012.csv",
+          "segment_2023110612.csv"
+        ],
+        "steps": 236,
+        "hyperparameters": {
+          "kernel": "matern52+linear",
+          "ard": true,
+          "ard_min_samples_per_dim": 1.0,
+          "input_standardize": true,
+          "target_standardize": true,
+          "early_stop_metric": "val_rmse",
+          "early_stop_alpha": 0.5,
+          "lengthscale_min": 0.05,
+          "lengthscale_max": 10.0,
+          "noise_min": 1e-05,
+          "noise_max": 1.0,
+          "outputscale_prior": {
+            "type": "gamma",
+            "shape": 2.0,
+            "rate": 0.15
+          },
+          "noise_prior": {
+            "type": "gamma",
+            "shape": 1.5,
+            "rate": 0.5
+          },
+          "learning_rate": 0.01,
+          "num_epochs": 250,
+          "patience": 20,
+          "max_train_size": 5000,
+          "early_stop_min_epochs": 50,
+          "revision_fixed_steps": 236
+        },
+        "output_constraint": "nonnegative-measured-level-v1",
+        "negative_prediction_floors": 0,
+        "prediction_clips": 0,
+        "n_available_predictions": 5,
+        "fold": 3
+      }
+    ],
+    "fold_coverage": [
+      {
+        "fold": 1,
+        "n_expected": 11,
+        "n_scored": 8,
+        "n_lost": 3,
+        "status": "scored",
+        "expected_observations": 11,
+        "scored_observations": 8,
+        "lost_observations": 3,
+        "lost_fraction": 0.2727272727272727,
+        "available_in_any_seed": 8,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 8
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      },
+      {
+        "fold": 2,
+        "n_expected": 11,
+        "n_scored": 0,
+        "n_lost": 11,
+        "status": "unavailable",
+        "reason": "No validation observations predicted by every requested seed",
+        "expected_observations": 11,
+        "scored_observations": 0,
+        "lost_observations": 11,
+        "lost_fraction": 1.0,
+        "available_in_any_seed": 0,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 0,
+            "reason": "Insufficient eligible windows for fit/evaluation"
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      },
+      {
+        "fold": 3,
+        "n_expected": 11,
+        "n_scored": 5,
+        "n_lost": 6,
+        "status": "scored",
+        "expected_observations": 11,
+        "scored_observations": 5,
+        "lost_observations": 6,
+        "lost_fraction": 0.5454545454545454,
+        "available_in_any_seed": 5,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 5
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      }
+    ],
+    "expected_observations": 33,
+    "scored_observations": 13,
+    "lost_observations": 20,
+    "lost_fraction": 0.6060606060606061,
+    "coverage_penalty": 0.25,
+    "coverage_penalty_contribution": 0.15151515151515152,
+    "minimum_observations": 5,
+    "prediction_column": "prediction",
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed",
+    "features": [
+      "Atmospheric pressure (mBar)",
+      "24hr precipitation total (mm)",
+      "Air temperature (°C)",
+      "Humidity (%)",
+      "Pfl - pH",
+      "Pfl - DO (% Sat)",
+      "Pfl - fDOM (QSU)",
+      "Pfl - Sp Cond (microS_cm) [35 m]",
+      "Zinc (µg/L)_state"
+    ],
+    "variant": "gp_03",
+    "seeds": [
+      0
+    ],
+    "uncertainty": false,
+    "hyper_override": null,
+    "selection": "training_validation_only",
+    "degenerate": false
+  }
+}

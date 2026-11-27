@@ -1,0 +1,76 @@
+{
+  "archive": "https://thredds.met.no/thredds/dodsC/metppltcarchivev1",
+  "station_latitude": 62.484785020758075,
+  "station_longitude": 6.479653454212095,
+  "grid_y": 1076,
+  "grid_x": 461,
+  "grid_latitude": 62.48488,
+  "grid_longitude": 6.4793997,
+  "station_sha256": "51b3a9aa379c8ae5a754e03d6b527b3b4e6c092af66aceb16f716e8c1515e894",
+  "start": "2020-01-16 16:00:00",
+  "end": "2025-08-15 11:00:00",
+  "expected_hours": 48908,
+  "units": {
+    "air_pressure_at_sea_level": {
+      "unit": "mbar",
+      "scale": 0.01,
+      "offset": 0.0
+    },
+    "air_temperature_2m": {
+      "unit": "degC",
+      "scale": 1.0,
+      "offset": -273.15
+    },
+    "integral_of_surface_downwelling_shortwave_flux_in_air_wrt_time": {
+      "unit": "W/m2",
+      "scale": 0.0002777777777777778,
+      "offset": 0.0
+    },
+    "integral_of_surface_downwelling_longwave_flux_in_air_wrt_time": {
+      "unit": "W/m2",
+      "scale": 0.0002777777777777778,
+      "offset": 0.0
+    },
+    "precipitation_amount": {
+      "unit": "mm/hour",
+      "scale": 1.0,
+      "offset": 0.0
+    },
+    "relative_humidity_2m": {
+      "unit": "percentage points",
+      "scale": 100.0,
+      "offset": 0.0
+    },
+    "wind_direction_10m": {
+      "unit": "degrees",
+      "scale": 1.0,
+      "offset": 0.0
+    },
+    "wind_speed_10m": {
+      "unit": "m/s",
+      "scale": 1.0,
+      "offset": 0.0
+    }
+  },
+  "comparisons": "finite simultaneous original station/grid observations; no imputation or bias correction",
+  "standardized_bias": "mean(grid-station) / station population SD; circular SD and wrapped errors for direction",
+  "timezone": "timestamps interpreted in their archived hourly convention; no timezone conversion introduced",
+  "completed_hours": 48908,
+  "status": "complete",
+  "failed_this_execution": 0,
+  "paired_counts": {
+    "Pressure": 44977,
+    "Air temperature": 44978,
+    "Shortwave radiation": 44978,
+    "Longwave radiation": 44978,
+    "Precipitation": 44978,
+    "Relative humidity": 44978,
+    "Wind direction": 44914,
+    "Wind speed": 44896
+  },
+  "validated_unique_hourly_timestamps": 48908,
+  "all_station_nonmissing_hours_paired": true,
+  "point_data_sha256": "6f8b7eb84616daaca0e723f0e1147440e4d6de0b78114d5321e17dd3d33bb01d",
+  "compatible_export_sha256": "27c638dc3ae5894817b1cd119265bcd58d82c7363ba9bdec012cb2404bffdb21",
+  "bias_table_sha256": "87972e3f2a29ab3d7cadf40f3f323978c753dfc6a0a920f64bcac01c7835827f"
+}

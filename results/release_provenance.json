@@ -1,0 +1,10 @@
+{
+  "schema_version": 3,
+  "retained_arm_fits": 28,
+  "within_arm_selection": "Complete final-method chronological searches, identical full budgets for all targets and both predictor sets",
+  "primary_arm": "noprofiler_differential",
+  "secondary_arm": "profiler_differential",
+  "reference_history": "same nominal training-period laboratory history for both arms",
+  "assessment": "primary model on all available held-out dates; added profiler value on matching dates",
+  "development": "Exploratory scope chosen during development; later observations are not prospective external validation"
+}

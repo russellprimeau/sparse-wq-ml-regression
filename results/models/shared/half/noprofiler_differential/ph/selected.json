@@ -1,0 +1,333 @@
+{
+  "features": [
+    "Wind speed x (m/s)",
+    "Wind speed y (m/s)",
+    "Atmospheric pressure (mBar)",
+    "24hr precipitation total (mm)",
+    "Air temperature (°C)",
+    "SCADA - pH",
+    "pH_state"
+  ],
+  "variant": "gp_03",
+  "seeds": [
+    0
+  ],
+  "objective": 1.1261723421767966,
+  "info": {
+    "metrics": {
+      "n": 15,
+      "rmse": 0.23077139935212568,
+      "mae": 0.1735562388102214,
+      "sigma_evaluation": 0.2174600857373345,
+      "nrmse": 1.0612126752808773,
+      "r2": -0.12617234217679663
+    },
+    "objective": 1.1261723421767966,
+    "details": [
+      {
+        "family": "gp",
+        "variant": "gp_03",
+        "input_features": [
+          "Wind speed x (m/s)",
+          "Wind speed y (m/s)",
+          "Atmospheric pressure (mBar)",
+          "24hr precipitation total (mm)",
+          "Air temperature (°C)",
+          "SCADA - pH",
+          "pH_state"
+        ],
+        "seed": 0,
+        "n_train_observations": 12,
+        "n_train_rows": 12,
+        "horizon": 0,
+        "uncertainty": false,
+        "training_observations": [
+          "segment_2022040412.csv",
+          "segment_2022050212.csv",
+          "segment_2022060112.csv",
+          "segment_2022072512.csv",
+          "segment_2022080112.csv",
+          "segment_2022082912.csv",
+          "segment_2022091912.csv",
+          "segment_2022101712.csv",
+          "segment_2022111412.csv",
+          "segment_2022120512.csv",
+          "segment_2022121212.csv",
+          "segment_2022121912.csv"
+        ],
+        "steps": 128,
+        "hyperparameters": {
+          "kernel": "matern52+linear",
+          "ard": true,
+          "ard_min_samples_per_dim": 1.0,
+          "input_standardize": true,
+          "target_standardize": true,
+          "early_stop_metric": "val_rmse",
+          "early_stop_alpha": 0.5,
+          "lengthscale_min": 0.05,
+          "lengthscale_max": 10.0,
+          "noise_min": 1e-05,
+          "noise_max": 1.0,
+          "outputscale_prior": {
+            "type": "gamma",
+            "shape": 2.0,
+            "rate": 0.15
+          },
+          "noise_prior": {
+            "type": "gamma",
+            "shape": 1.5,
+            "rate": 0.5
+          },
+          "learning_rate": 0.01,
+          "num_epochs": 250,
+          "patience": 20,
+          "max_train_size": 5000,
+          "early_stop_min_epochs": 50,
+          "revision_fixed_steps": 128
+        },
+        "output_constraint": "nonnegative-measured-level-v1",
+        "negative_prediction_floors": 0,
+        "prediction_clips": 0,
+        "n_available_predictions": 5,
+        "fold": 1
+      },
+      {
+        "family": "gp",
+        "variant": "gp_03",
+        "input_features": [
+          "Wind speed x (m/s)",
+          "Wind speed y (m/s)",
+          "Atmospheric pressure (mBar)",
+          "24hr precipitation total (mm)",
+          "Air temperature (°C)",
+          "SCADA - pH",
+          "pH_state"
+        ],
+        "seed": 0,
+        "n_train_observations": 17,
+        "n_train_rows": 17,
+        "horizon": 0,
+        "uncertainty": false,
+        "training_observations": [
+          "segment_2022040412.csv",
+          "segment_2022050212.csv",
+          "segment_2022060112.csv",
+          "segment_2022072512.csv",
+          "segment_2022080112.csv",
+          "segment_2022082912.csv",
+          "segment_2022091912.csv",
+          "segment_2022101712.csv",
+          "segment_2022111412.csv",
+          "segment_2022120512.csv",
+          "segment_2022121212.csv",
+          "segment_2022121912.csv",
+          "segment_2023011612.csv",
+          "segment_2023021312.csv",
+          "segment_2023031312.csv",
+          "segment_2023041112.csv",
+          "segment_2023050812.csv"
+        ],
+        "steps": 140,
+        "hyperparameters": {
+          "kernel": "matern52+linear",
+          "ard": true,
+          "ard_min_samples_per_dim": 1.0,
+          "input_standardize": true,
+          "target_standardize": true,
+          "early_stop_metric": "val_rmse",
+          "early_stop_alpha": 0.5,
+          "lengthscale_min": 0.05,
+          "lengthscale_max": 10.0,
+          "noise_min": 1e-05,
+          "noise_max": 1.0,
+          "outputscale_prior": {
+            "type": "gamma",
+            "shape": 2.0,
+            "rate": 0.15
+          },
+          "noise_prior": {
+            "type": "gamma",
+            "shape": 1.5,
+            "rate": 0.5
+          },
+          "learning_rate": 0.01,
+          "num_epochs": 250,
+          "patience": 20,
+          "max_train_size": 5000,
+          "early_stop_min_epochs": 50,
+          "revision_fixed_steps": 140
+        },
+        "output_constraint": "nonnegative-measured-level-v1",
+        "negative_prediction_floors": 0,
+        "prediction_clips": 0,
+        "n_available_predictions": 5,
+        "fold": 2
+      },
+      {
+        "family": "gp",
+        "variant": "gp_03",
+        "input_features": [
+          "Wind speed x (m/s)",
+          "Wind speed y (m/s)",
+          "Atmospheric pressure (mBar)",
+          "24hr precipitation total (mm)",
+          "Air temperature (°C)",
+          "SCADA - pH",
+          "pH_state"
+        ],
+        "seed": 0,
+        "n_train_observations": 22,
+        "n_train_rows": 22,
+        "horizon": 0,
+        "uncertainty": false,
+        "training_observations": [
+          "segment_2022040412.csv",
+          "segment_2022050212.csv",
+          "segment_2022060112.csv",
+          "segment_2022072512.csv",
+          "segment_2022080112.csv",
+          "segment_2022082912.csv",
+          "segment_2022091912.csv",
+          "segment_2022101712.csv",
+          "segment_2022111412.csv",
+          "segment_2022120512.csv",
+          "segment_2022121212.csv",
+          "segment_2022121912.csv",
+          "segment_2023011612.csv",
+          "segment_2023021312.csv",
+          "segment_2023031312.csv",
+          "segment_2023041112.csv",
+          "segment_2023050812.csv",
+          "segment_2023060512.csv",
+          "segment_2023070312.csv",
+          "segment_2023073112.csv",
+          "segment_2023082812.csv",
+          "segment_2023092512.csv"
+        ],
+        "steps": 14,
+        "hyperparameters": {
+          "kernel": "matern52+linear",
+          "ard": true,
+          "ard_min_samples_per_dim": 1.0,
+          "input_standardize": true,
+          "target_standardize": true,
+          "early_stop_metric": "val_rmse",
+          "early_stop_alpha": 0.5,
+          "lengthscale_min": 0.05,
+          "lengthscale_max": 10.0,
+          "noise_min": 1e-05,
+          "noise_max": 1.0,
+          "outputscale_prior": {
+            "type": "gamma",
+            "shape": 2.0,
+            "rate": 0.15
+          },
+          "noise_prior": {
+            "type": "gamma",
+            "shape": 1.5,
+            "rate": 0.5
+          },
+          "learning_rate": 0.01,
+          "num_epochs": 250,
+          "patience": 20,
+          "max_train_size": 5000,
+          "early_stop_min_epochs": 50,
+          "revision_fixed_steps": 14
+        },
+        "output_constraint": "nonnegative-measured-level-v1",
+        "negative_prediction_floors": 0,
+        "prediction_clips": 0,
+        "n_available_predictions": 5,
+        "fold": 3
+      }
+    ],
+    "fold_coverage": [
+      {
+        "fold": 1,
+        "n_expected": 5,
+        "n_scored": 5,
+        "n_lost": 0,
+        "status": "scored",
+        "expected_observations": 5,
+        "scored_observations": 5,
+        "lost_observations": 0,
+        "lost_fraction": 0.0,
+        "available_in_any_seed": 5,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 5
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      },
+      {
+        "fold": 2,
+        "n_expected": 5,
+        "n_scored": 5,
+        "n_lost": 0,
+        "status": "scored",
+        "expected_observations": 5,
+        "scored_observations": 5,
+        "lost_observations": 0,
+        "lost_fraction": 0.0,
+        "available_in_any_seed": 5,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 5
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      },
+      {
+        "fold": 3,
+        "n_expected": 5,
+        "n_scored": 5,
+        "n_lost": 0,
+        "status": "scored",
+        "expected_observations": 5,
+        "scored_observations": 5,
+        "lost_observations": 0,
+        "lost_fraction": 0.0,
+        "available_in_any_seed": 5,
+        "excluded_due_to_seed_disagreement": 0,
+        "seed_coverage": [
+          {
+            "seed": 0,
+            "n_available": 5
+          }
+        ],
+        "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+      }
+    ],
+    "expected_observations": 15,
+    "scored_observations": 15,
+    "lost_observations": 0,
+    "lost_fraction": 0.0,
+    "coverage_penalty": 0.25,
+    "coverage_penalty_contribution": 0.0,
+    "minimum_observations": 5,
+    "prediction_column": "prediction",
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed",
+    "features": [
+      "Wind speed x (m/s)",
+      "Wind speed y (m/s)",
+      "Atmospheric pressure (mBar)",
+      "24hr precipitation total (mm)",
+      "Air temperature (°C)",
+      "SCADA - pH",
+      "pH_state"
+    ],
+    "variant": "gp_03",
+    "seeds": [
+      0
+    ],
+    "uncertainty": false,
+    "hyper_override": null,
+    "selection": "training_validation_only",
+    "degenerate": false
+  }
+}

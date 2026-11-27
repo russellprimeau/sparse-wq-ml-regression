@@ -1,0 +1,226 @@
+[
+  {
+    "target": "arsenic",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "6e530b387629a7cef89e8f4716aa120011b31cfb0f4b1f6c09e1e2056289f345",
+    "fit_sha256": "ce29725ab43bf6c63aa49ba703461d9741d996641af0b48dbfd26f4d733d9919",
+    "predictions_sha256": "52e4f337a42e77f81a85653531e87366a9c506ba072181386e9c6378c6f863ed"
+  },
+  {
+    "target": "cadmium",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "740fc979a30edb26e93ffc25687c3964fb58e3a410df14bf13ac5d6213429416",
+    "fit_sha256": "b8713bc4cefea50342762ba2464f8f378079079585be95b7131ea00d783aada6",
+    "predictions_sha256": "8baeb44b4848eb5987ab3578522eeb33d7bcc70df65b6f37a388e60d7d2ed4f5"
+  },
+  {
+    "target": "chromium",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "407a2ebdcfd0af6eec25ecece59face840ae092d9e332ccd558f73afc662ffb1",
+    "fit_sha256": "f0c51d29b6a410ba976a99c7e5e1676249a91f7b9bedc1b93b3796f358e3870d",
+    "predictions_sha256": "5ac3e0be4d56962cd7cd5cf4db89f44cbbb361a6d9c38d71b87887172a83bda2"
+  },
+  {
+    "target": "colony_count_22c",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "1ddd34c88f5142a3931aae9a4464de7a7a6918f83ce689c02321fb71ce1c67fc",
+    "fit_sha256": "0bbcd5f63dc2463b5c466eb3a44f76a405cb25c0ec7e415a1204f4337c1af2a9",
+    "predictions_sha256": "0e3967edd9fe894e7c450b1f1aaa6c1e9b5d3c87c61f0345d12a52d859bcccbb"
+  },
+  {
+    "target": "color",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "cc1af4a99da180ded2206b2bb37f5cbd16fc5919a7264d284a26c4d0d16b9345",
+    "fit_sha256": "4907e7edb68dd6c55f94b293467749d76f670cf8bfc0463a595b417afef023d8",
+    "predictions_sha256": "3b26fadbd9afae446ce3b1364b66b883e8a059569465a2f3161377d4b3dd9e1e"
+  },
+  {
+    "target": "copper_filtered",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "a04a19c9c446a408cc72277a9fede5564be9af756e0f544420e33febff86e516",
+    "fit_sha256": "0428dd849f1557b55fbc3f61ca201f0813f4f47123949bf73925bc5910533ce0",
+    "predictions_sha256": "08bd6cec455401fca83d0e5b3006a3f7f0ee2a821707f27a8a6af42ae54d575e"
+  },
+  {
+    "target": "e_coli",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "11e583cd1f531bf52e2ad05a467e392848838ad54d0ceceb2a0e869264ffe8f6",
+    "fit_sha256": "e884fe49a71cc84990bfece1db19ffc95b5fbe57d0976af3d5938571d3411b7e",
+    "predictions_sha256": "113187527941fdb9fb389236aa0f705927ae924a79832c69ac3d87543cb68239"
+  },
+  {
+    "target": "intestinal_enterococci",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "0d0971b57c22307a4c4ce362ce585a0cbf781afe7d6134e913e549b1b9db90cd",
+    "fit_sha256": "f9423001b4211339af66ac5674d512c53371560f158febbfeae808e8df362f2c",
+    "predictions_sha256": "9c6cb74d1fe9bd156196a1dd8868ef66574688921b47787e7a505964bd3e913e"
+  },
+  {
+    "target": "lead",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "c4e07a314b802401386286992581775673cae704a05af4e8befc8e98ace85bed",
+    "fit_sha256": "c46354903d16cf6e6ab50633c5473f659adacbd4cffa1b3320b41ac817342868",
+    "predictions_sha256": "942f34f06164b9d08fdc4023215dbca889187a3748cbdabd4d2fb70934260cc3"
+  },
+  {
+    "target": "nickel",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "d3db5673a680be8dd2f111e6f51c2bc3b95b1cff776c1fd742f49e9e979b4591",
+    "fit_sha256": "54db7f0d301161eda866c6c1af433a6e9b1da2e1e762a068a3f99b3875b1136b",
+    "predictions_sha256": "6d77becd58baac1d7fd87cc985ca0fa3c0052bac03adec205c86be9b5902cd33"
+  },
+  {
+    "target": "ph",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "3262f03a7b67a97539a85e95f54460f4c56250ade219c13d8443dc824af05654",
+    "fit_sha256": "1d42d9b93362c6dd3faa0cca7df332eac09e4aa92331a287a00c7369f26bbd57",
+    "predictions_sha256": "190053b039cabb3b3061ed560469da46d89cd1864778f644b8903da14329455c"
+  },
+  {
+    "target": "total_coliforms_37c",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "e88473c6250955fa5c7c5fede1f3542d06b7805d8a1c8cac3720d433dc614b8f",
+    "fit_sha256": "e39b5a5e86975c94ed6710f4f924dc35d5f1e098c14f750fa58410cda1fc060d",
+    "predictions_sha256": "6b994651890677e44acb748edad4a8e7fff0a8308f2dfb696c2fbdabfa21d1e2"
+  },
+  {
+    "target": "turbidity",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "9ed88439f4a590cc9ba5cac0ec0f7e85e251e2c79d295d56deffd6c1558ac127",
+    "fit_sha256": "db5b9e70c8e81f09244fe9cbb91571241f354dee28d1c74c900a5f4b1cc23f3e",
+    "predictions_sha256": "4ebd9c19895e3af8e5b4164f95d9f7d723bc4aecd696a5a1c42bcac999be3309"
+  },
+  {
+    "target": "zinc",
+    "run": "profiler_differential",
+    "method": "off",
+    "selected_sha256": "c1ce4214982bc0756bd1259065dd31b1d8cdfa4513f835db20679d8484ed98b1",
+    "fit_sha256": "cf8189048a8996f97a4bd623dceafa2c969bb5afd1df446bae8acd264258c28e",
+    "predictions_sha256": "fea73d601986f9acffe626e669bc30eb684a7ffbfbd936c34b5bae0fdd33cf47"
+  },
+  {
+    "target": "arsenic",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "9c0599cc86ee5483f101a23d2f6d04d6fd81e787700c39feeb936fa1cfb93670",
+    "fit_sha256": "bbaa291575fbc0d8ba584887406d86054c711ae7668367211220205f08f0df0a",
+    "predictions_sha256": "b0ebd5df59d602bca64f67fcf037e47d49ec617aade7b1e602c23bf5140235ea"
+  },
+  {
+    "target": "cadmium",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "a8b487338187c86440dc0e806e30ad7290483a1988d57378b7162067d2313120",
+    "fit_sha256": "e74217ac46fbd2be541bf7b0870acd1c17ee5e6a2433bd39a59926ef65d03682",
+    "predictions_sha256": "26edc3fbb743c397766f7d78c8b6c7bd670793f805aad1c33fdde935c111f279"
+  },
+  {
+    "target": "chromium",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "6023ed6916b523d8656cd562e999883f83e34603c9b7f3531492806296dd4993",
+    "fit_sha256": "c950af7d72060b8d5119586c15cc3d9159a8667bc19ee515605cac3604f9ef1d",
+    "predictions_sha256": "e27459720568983fa8a40556bd663c103f9b42e80fdfe216fe3c61d1595e8259"
+  },
+  {
+    "target": "colony_count_22c",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "95dc9b54f370b3a7064f907b05e53e4e939b8fac972d1cc22fca98c0e3ac3250",
+    "fit_sha256": "fc06ab8606eb7626901f151e6b979fef829c646ae568f0e2efb3fecb95756d6d",
+    "predictions_sha256": "f3e63662bcc419995235ae5d8b7c74f4cc0d53aede8ff258e458348efe770c12"
+  },
+  {
+    "target": "color",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "529c6e4c240b34a0fb097698a4d30f602584c5c0728b077dfc197cf8a5fdb9a4",
+    "fit_sha256": "6cff25035e5140e909db7fe2372e24fc119ab61cd69ea33eb65698dd1948b35d",
+    "predictions_sha256": "95ef2f520ba9822e70fd93f38cc167e040524ac96006b6de62af4b707b22ba56"
+  },
+  {
+    "target": "copper_filtered",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "17cc10b89707991e0b1df6840b750c063e52e49f22c6a7c6b3b503c3cfd2965d",
+    "fit_sha256": "b6942ec762936567507b41f7f0462db7b3a08e5cc373f630bcf271e4a6aac44f",
+    "predictions_sha256": "a777e57dae12655e0b987111ec2155f18751b727f540652d40c402d9e3e19b18"
+  },
+  {
+    "target": "e_coli",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "7848988796063e70ee95352154eb1c68b48708e7451be8025c72f406e7ce5354",
+    "fit_sha256": "885603905b1e2f02a37921b521cfb559455773ff4a33cfe6d7694d740335b581",
+    "predictions_sha256": "736dd40a92719d44be1eaac1ef5dd49cbbf684a2aeb49583687d9f678784a070"
+  },
+  {
+    "target": "intestinal_enterococci",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "be29587639119ae0913eb4ea046bfed451cdb19749a975a562bb802d010d847d",
+    "fit_sha256": "4261f545792061dc679633db2f3abd4ef6404c95894ab2ba67684861b02b027c",
+    "predictions_sha256": "3337a9e23ef66cd4fe3111bf06fb6051c6669de0eeb32ca26522c5ea23592613"
+  },
+  {
+    "target": "lead",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "39dfb8d25b3201ac56375234847a9e57d2de5cd7c164561e69997426ae9d8be7",
+    "fit_sha256": "ce6f1beaca8821dba3f53fd34d56c2c9c86ca216713113ac7d93b56166627a35",
+    "predictions_sha256": "e795817efc766ab10605ffd6de1cda126f865d1ad1d55b66e4c2c3c20f05542c"
+  },
+  {
+    "target": "nickel",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "850637cb0ea41ec859c64169f2658356dd7cd2facda45f1cb040373ccc0d3e53",
+    "fit_sha256": "0a088ef8bab498715f2638a322898e212292c54b27000dd78727ae01fe561256",
+    "predictions_sha256": "54cc09717c848db1dc6d6d99a4e8318f51968d925676dccf6244acf49a2c08bc"
+  },
+  {
+    "target": "ph",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "4982bf1b58ee5e024bc7809a9d772f2f9e8dbaea717e859112cff2707728dfd1",
+    "fit_sha256": "32a66447a9506a615dbda2d3bfe4914aa89750bbffc50cadd551c971189c84bb",
+    "predictions_sha256": "545fd7e4ea8119f66251b1c59f5018316fae4c586a9821e70a54805a897610fd"
+  },
+  {
+    "target": "total_coliforms_37c",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "2798752267991db0807d3a52839a219bf72c08f453bc5b3e0662d14533b9cf5c",
+    "fit_sha256": "b5c712dfd5b40a7b556a25300a0db316ba4c0cfb2ec02d1901a5724ea3b9682a",
+    "predictions_sha256": "a9ee3259f6f686e4e57403976e82526f3f70701575b4963253296031c9d9ed58"
+  },
+  {
+    "target": "turbidity",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "2b3ceb40436c4c716bc3fd8252b5b1a45a15d13c201189030983aa61c3389360",
+    "fit_sha256": "24d6dfc037167b18532eab7c45ad198bc0627fad374422e612e8c551715af1cc",
+    "predictions_sha256": "b83d339ae2f77f9229a0f9e8dd0319e8e788498f83fd617cb6dee2f2b975640b"
+  },
+  {
+    "target": "zinc",
+    "run": "noprofiler_differential",
+    "method": "shared",
+    "selected_sha256": "77807682b5d6a8e683c5cba6d670ac8d59fa6e9806b928da6e0dae27045acf29",
+    "fit_sha256": "e0cae0b324e45c11e1205aa8dab4863e078cceab2268a64d2614191b4a6b2d87",
+    "predictions_sha256": "cf336bbbb54d602229a7147d40f6836a9a1e3b9536fc021282fc112a73724ffd"
+  }
+]

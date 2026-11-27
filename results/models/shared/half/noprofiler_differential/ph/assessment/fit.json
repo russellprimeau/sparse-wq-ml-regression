@@ -1,0 +1,110 @@
+{
+  "metrics": {
+    "n": 13,
+    "rmse": 0.2005798406281677,
+    "mae": 0.15738168129554148,
+    "sigma_evaluation": 0.07297563831157806,
+    "nrmse": 2.7485863127605477,
+    "r2": -6.5547267186946225
+  },
+  "details": [
+    {
+      "family": "gp",
+      "variant": "gp_03",
+      "input_features": [
+        "Wind speed x (m/s)",
+        "Wind speed y (m/s)",
+        "Atmospheric pressure (mBar)",
+        "24hr precipitation total (mm)",
+        "Air temperature (°C)",
+        "SCADA - pH",
+        "pH_state"
+      ],
+      "seed": 0,
+      "n_train_observations": 27,
+      "n_train_rows": 27,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "steps": 1,
+      "hyperparameters": {
+        "kernel": "matern52+linear",
+        "ard": true,
+        "ard_min_samples_per_dim": 1.0,
+        "input_standardize": true,
+        "target_standardize": true,
+        "early_stop_metric": "val_rmse",
+        "early_stop_alpha": 0.5,
+        "lengthscale_min": 0.05,
+        "lengthscale_max": 10.0,
+        "noise_min": 1e-05,
+        "noise_max": 1.0,
+        "outputscale_prior": {
+          "type": "gamma",
+          "shape": 2.0,
+          "rate": 0.15
+        },
+        "noise_prior": {
+          "type": "gamma",
+          "shape": 1.5,
+          "rate": 0.5
+        },
+        "learning_rate": 0.01,
+        "num_epochs": 250,
+        "patience": 20,
+        "max_train_size": 5000,
+        "early_stop_min_epochs": 50,
+        "revision_fixed_steps": 1
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    }
+  ],
+  "coverage": {
+    "expected_observations": 13,
+    "scored_observations": 13,
+    "lost_observations": 0,
+    "lost_fraction": 0.0,
+    "available_in_any_seed": 13,
+    "excluded_due_to_seed_disagreement": 0,
+    "seed_coverage": [
+      {
+        "seed": 0,
+        "n_available": 13
+      }
+    ],
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+  },
+  "selected_by": "training-only chronological validation",
+  "assessment_role": "chronological_later_evaluation"
+}

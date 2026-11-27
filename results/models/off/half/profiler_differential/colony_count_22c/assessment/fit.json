@@ -1,0 +1,129 @@
+{
+  "metrics": {
+    "n": 27,
+    "rmse": 49.89361710672211,
+    "mae": 25.51184986255787,
+    "sigma_evaluation": 40.86647265308842,
+    "nrmse": 1.2208936535889519,
+    "r2": -0.4905813133737795
+  },
+  "details": [
+    {
+      "family": "gp",
+      "variant": "gp_04",
+      "input_features": [
+        "24hr precipitation total (mm)",
+        "Pfl - DO (% Sat)",
+        "Pfl - Sp Cond (microS_cm) [35 m]",
+        "Pfl - DO (% Sat) [35 m]",
+        "Pfl - Turbidity (FNU) [35 m]",
+        "Pfl - fDOM (RFU) [35 m]"
+      ],
+      "seed": 0,
+      "n_train_observations": 47,
+      "n_train_rows": 47,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022032812.csv",
+        "segment_2022042512.csv",
+        "segment_2022050912.csv",
+        "segment_2022051812.csv",
+        "segment_2022052312.csv",
+        "segment_2022060712.csv",
+        "segment_2022061312.csv",
+        "segment_2022062012.csv",
+        "segment_2022080812.csv",
+        "segment_2022081512.csv",
+        "segment_2022082212.csv",
+        "segment_2022090512.csv",
+        "segment_2022091212.csv",
+        "segment_2022092612.csv",
+        "segment_2022100312.csv",
+        "segment_2022101012.csv",
+        "segment_2022102412.csv",
+        "segment_2022103112.csv",
+        "segment_2022110712.csv",
+        "segment_2023041712.csv",
+        "segment_2023042412.csv",
+        "segment_2023050212.csv",
+        "segment_2023052212.csv",
+        "segment_2023053012.csv",
+        "segment_2023060512.csv",
+        "segment_2023061212.csv",
+        "segment_2023070312.csv",
+        "segment_2023071012.csv",
+        "segment_2023071712.csv",
+        "segment_2023072412.csv",
+        "segment_2023073112.csv",
+        "segment_2023080712.csv",
+        "segment_2023081412.csv",
+        "segment_2023082112.csv",
+        "segment_2023090412.csv",
+        "segment_2023091112.csv",
+        "segment_2023091812.csv",
+        "segment_2023092512.csv",
+        "segment_2023100212.csv",
+        "segment_2023100912.csv",
+        "segment_2023101612.csv",
+        "segment_2023102312.csv",
+        "segment_2023103012.csv",
+        "segment_2023110612.csv",
+        "segment_2024043012.csv",
+        "segment_2024050612.csv",
+        "segment_2024051312.csv"
+      ],
+      "steps": 45,
+      "hyperparameters": {
+        "kernel": "matern52",
+        "ard": true,
+        "ard_min_samples_per_dim": 1.0,
+        "input_standardize": true,
+        "target_standardize": true,
+        "early_stop_metric": "val_rmse",
+        "early_stop_alpha": 0.5,
+        "lengthscale_min": 0.05,
+        "lengthscale_max": 10.0,
+        "noise_min": 1e-05,
+        "noise_max": 1.0,
+        "outputscale_prior": {
+          "type": "gamma",
+          "shape": 2.0,
+          "rate": 0.15
+        },
+        "noise_prior": {
+          "type": "gamma",
+          "shape": 1.5,
+          "rate": 0.5
+        },
+        "learning_rate": 0.01,
+        "num_epochs": 250,
+        "patience": 20,
+        "max_train_size": 5000,
+        "early_stop_min_epochs": 50,
+        "revision_fixed_steps": 45
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 27
+    }
+  ],
+  "coverage": {
+    "expected_observations": 44,
+    "scored_observations": 27,
+    "lost_observations": 17,
+    "lost_fraction": 0.38636363636363635,
+    "available_in_any_seed": 27,
+    "excluded_due_to_seed_disagreement": 0,
+    "seed_coverage": [
+      {
+        "seed": 0,
+        "n_available": 27
+      }
+    ],
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+  },
+  "selected_by": "training-only chronological validation",
+  "assessment_role": "chronological_later_evaluation"
+}

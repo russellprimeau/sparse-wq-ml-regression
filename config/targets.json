@@ -1,0 +1,72 @@
+{
+  "color": {
+    "target_name": "Color",
+    "laboratory_target": "Color",
+    "unit": "mg Pt/L"
+  },
+  "turbidity": {
+    "target_name": "Turbidity",
+    "laboratory_target": "Turbidity (FNU)",
+    "unit": "FNU"
+  },
+  "ph": {
+    "target_name": "pH",
+    "laboratory_target": "pH",
+    "unit": "pH units"
+  },
+  "e_coli": {
+    "target_name": "E. coli",
+    "laboratory_target": "E.coli (CFU/100mL)",
+    "unit": "CFU/100 mL"
+  },
+  "intestinal_enterococci": {
+    "target_name": "Intestinal enterococci",
+    "laboratory_target": "Intestinal enterococci (CFU/100mL)",
+    "unit": "CFU/100 mL"
+  },
+  "colony_count_22c": {
+    "target_name": "Colony count (22\u00b0C)",
+    "laboratory_target": "Colony Count 22\u00b0C (CFU/mL)",
+    "unit": "CFU/mL"
+  },
+  "total_coliforms_37c": {
+    "target_name": "Total coliforms",
+    "laboratory_target": "Total coliforms 37\u00b0C (CFU/100mL)",
+    "unit": "CFU/100 mL"
+  },
+  "arsenic": {
+    "target_name": "Arsenic",
+    "laboratory_target": "Arsenic (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  },
+  "lead": {
+    "target_name": "Lead",
+    "laboratory_target": "Lead (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  },
+  "cadmium": {
+    "target_name": "Cadmium",
+    "laboratory_target": "Cadmium (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  },
+  "copper_filtered": {
+    "target_name": "Filtered copper",
+    "laboratory_target": "Copper filtered (mg/L)",
+    "unit": "mg/L"
+  },
+  "chromium": {
+    "target_name": "Chromium",
+    "laboratory_target": "Chromium (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  },
+  "nickel": {
+    "target_name": "Nickel",
+    "laboratory_target": "Nickel (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  },
+  "zinc": {
+    "target_name": "Zinc",
+    "laboratory_target": "Zinc (\u00b5g/L)",
+    "unit": "\u00b5g/L"
+  }
+}

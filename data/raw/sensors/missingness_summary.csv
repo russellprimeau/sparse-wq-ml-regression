@@ -1,0 +1,45 @@
+record_type,scope,column,channel,rows,missing_before,restored_missing,missing_after
+FullHourly,all_dates,sensorParms(1),Water temperature (°C),17829,0,1,1
+FullHourly,study,sensorParms(1),Water temperature (°C),10572,0,0,0
+FullHourly,all_dates,sensorParms(2),Cond (microS_cm),17829,0,1,1
+FullHourly,study,sensorParms(2),Cond (microS_cm),10572,0,0,0
+FullHourly,all_dates,sensorParms(3),Sp Cond (microS_cm),17829,0,1,1
+FullHourly,study,sensorParms(3),Sp Cond (microS_cm),10572,0,0,0
+FullHourly,all_dates,sensorParms(4),Salinity (ppt),17829,0,1,1
+FullHourly,study,sensorParms(4),Salinity (ppt),10572,0,0,0
+FullHourly,all_dates,sensorParms(5),pH,17829,0,1,1
+FullHourly,study,sensorParms(5),pH,10572,0,0,0
+FullHourly,all_dates,sensorParms(6),DO (% Sat),17829,0,1,1
+FullHourly,study,sensorParms(6),DO (% Sat),10572,0,0,0
+FullHourly,all_dates,sensorParms(7),Turbidity (NTU),17829,0,1,1
+FullHourly,study,sensorParms(7),Turbidity (NTU),10572,0,0,0
+FullHourly,all_dates,sensorParms(8),Turbidity (FNU),17829,0,1,1
+FullHourly,study,sensorParms(8),Turbidity (FNU),10572,0,0,0
+FullHourly,all_dates,sensorParms(9),Vertical position (m),17829,0,1,1
+FullHourly,study,sensorParms(9),Vertical position (m),10572,0,0,0
+FullHourly,all_dates,sensorParms(10),fDOM (RFU),17829,0,1,1
+FullHourly,study,sensorParms(10),fDOM (RFU),10572,0,0,0
+FullHourly,all_dates,sensorParms(11),fDOM (QSU),17829,0,1,1
+FullHourly,study,sensorParms(11),fDOM (QSU),10572,0,0,0
+Profiles,all_dates,sensorParms(1),Water temperature (°C),89807,311,98,409
+Profiles,study,sensorParms(1),Water temperature (°C),61539,219,91,310
+Profiles,all_dates,sensorParms(2),Cond (microS_cm),89807,0,0,0
+Profiles,study,sensorParms(2),Cond (microS_cm),61539,0,0,0
+Profiles,all_dates,sensorParms(3),Sp Cond (microS_cm),89807,0,0,0
+Profiles,study,sensorParms(3),Sp Cond (microS_cm),61539,0,0,0
+Profiles,all_dates,sensorParms(4),Salinity (ppt),89807,0,0,0
+Profiles,study,sensorParms(4),Salinity (ppt),61539,0,0,0
+Profiles,all_dates,sensorParms(5),pH,89807,0,0,0
+Profiles,study,sensorParms(5),pH,61539,0,0,0
+Profiles,all_dates,sensorParms(6),DO (% Sat),89807,0,0,0
+Profiles,study,sensorParms(6),DO (% Sat),61539,0,0,0
+Profiles,all_dates,sensorParms(7),Turbidity (NTU),89807,0,0,0
+Profiles,study,sensorParms(7),Turbidity (NTU),61539,0,0,0
+Profiles,all_dates,sensorParms(8),Turbidity (FNU),89807,0,0,0
+Profiles,study,sensorParms(8),Turbidity (FNU),61539,0,0,0
+Profiles,all_dates,sensorParms(9),Vertical position (m),89807,0,0,0
+Profiles,study,sensorParms(9),Vertical position (m),61539,0,0,0
+Profiles,all_dates,sensorParms(10),fDOM (RFU),89807,0,0,0
+Profiles,study,sensorParms(10),fDOM (RFU),61539,0,0,0
+Profiles,all_dates,sensorParms(11),fDOM (QSU),89807,90,25,115
+Profiles,study,sensorParms(11),fDOM (QSU),61539,73,23,96

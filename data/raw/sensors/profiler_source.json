@@ -1,0 +1,23 @@
+{
+  "stage": "source_missingness_restoration",
+  "outputs_sha256": {
+    "FullHourly_source_corrected.csv": "233f755791e3b3a5243cca4c20e9529ca350a72f5abb58eba7b52a589c287e90",
+    "Profiles_source_corrected.csv": "b9d0d6e2acd891e7e245c11bef7280c913331b7e5a4b172b0ea00cf990218385",
+    "missingness_corrections.csv": "39500fab0d41fc731526edf4d9a27818c0548553dfd8a3101cfb4feb6c7f40fc",
+    "missingness_summary.csv": "9cbec6f7a64c2cdc7ea9b246844494637023a6786630df75f5dedfd8e8ef1f13"
+  },
+  "source_files_sha256": {
+    "FullHourly.csv": "4fe05b94bb215bfab41309858c94596ffcac89c245d894932ad21394c52d5dd9",
+    "profiler_raw/Profiler_diagnostic_SondeHourly.dat": "9da887f06137aa0dccf4ece5e98b0e1c39de96a2eb99e0bd5fce377158af721a",
+    "profiler_raw/Profiler_modem_SondeHourly 1.dat": "98c38d030c3e1f56aa0c9b9fd9e1caa2e97adfcec257d6220465ce5585f5547f",
+    "profiler_raw/Profiler_modem_SondeHourly.dat": "3355f6f755cc0a5c0e26b3373c4ebab4237b4cf9298b17dcafc961333439aae7",
+    "Profiles.csv": "61d1a3b9406ef7644e71a21a78ca0145af4f5e2ff4b911f62caa35ea9603e336",
+    "profiler_raw/Profiler_diagnostic_PFL_Step.dat": "3c9f53ea7ea0af0dcb637f222e41ea238d6b736cce76519ee2d26a858cf2864f",
+    "profiler_raw/Profiler_modem_PFL_Step 1.dat": "f3e72cb171b73c64150c91c061169bff85427818e0831772e0748d7174f7f3fd",
+    "profiler_raw/Profiler_modem_PFL_Step.dat": "061b135b58238f4d1a8d2ea288d2e9ab2d74f3797ebed21226db76bad9a1e28c",
+    "FullHourly_combined.csv": "6eedd871aca7616c5391402ed9785c365181a894538745d18e92979314f1e2d9",
+    "Profiles_combined.csv": "decd107afb8448d7a6d57abcb352b92792ad3cb98a00c1baffeccfd081b9676d"
+  },
+  "policy": "restore only confirmed import zeros where original logger exports are missing; preserve other values",
+  "timestamp_policy": "logger wall-clock time; no timezone conversion or rounding"
+}

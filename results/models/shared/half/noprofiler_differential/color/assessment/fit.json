@@ -1,0 +1,877 @@
+{
+  "metrics": {
+    "n": 13,
+    "rmse": 0.9381399469156104,
+    "mae": 0.7333327929178873,
+    "sigma_evaluation": 0.8770580193070292,
+    "nrmse": 1.069644112776989,
+    "r2": -0.1441385279984717
+  },
+  "details": [
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 0,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 0
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    },
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 1,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 1
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    },
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 2,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 2
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    },
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 3,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 3
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    },
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 4,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 4
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    },
+    {
+      "family": "xgb",
+      "variant": "xgb_02",
+      "input_features": [
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "Humidity (%)",
+        "SCADA - pH"
+      ],
+      "seed": 5,
+      "n_train_observations": 29,
+      "n_train_rows": 29,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022020712.csv",
+        "segment_2022030712.csv",
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022072512.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2022120512.csv",
+        "segment_2022121212.csv",
+        "segment_2022121912.csv",
+        "segment_2023011612.csv",
+        "segment_2023021312.csv",
+        "segment_2023031312.csv",
+        "segment_2023041112.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv",
+        "segment_2023121812.csv",
+        "segment_2024011512.csv",
+        "segment_2024021212.csv"
+      ],
+      "n_estimators_tuned": 277,
+      "rounds_from": "configuration",
+      "n_estimators": 277,
+      "hyperparameters": {
+        "metric": "rmse",
+        "tree_method": "hist",
+        "objective": "reg:squarederror",
+        "n_estimators": 277,
+        "max_depth": 5,
+        "subsample": 0.7020414994584707,
+        "colsample_bytree": 0.8594303030044139,
+        "min_child_weight": 8.0,
+        "gamma": 0.1479810936171602,
+        "reg_lambda": 3.2741229327069203,
+        "reg_alpha": 0.0003538267357542409,
+        "learning_rate": 0.182999161610174,
+        "n_jobs": 2,
+        "early_stopping_rounds": null,
+        "train_loss_plateau_rounds": 10,
+        "train_loss_min_relative_improvement": 0.01,
+        "cv_tuning": {
+          "enabled": true,
+          "n_folds": 5,
+          "n_trials": 250,
+          "seed": 21,
+          "parallel_jobs": 1,
+          "metric": "rmse_r2",
+          "selection_rule": "best",
+          "search_method": "optuna",
+          "optuna_sampler": "tpe",
+          "random_start_trials": 30,
+          "use_early_stopping": false,
+          "early_stopping_rounds": null,
+          "verbose": false,
+          "min_r2": 0.0,
+          "r2_penalty": 10.0,
+          "no_improvement_trials": 100,
+          "no_improvement_se": 1.0,
+          "param_space": {
+            "n_estimators": {
+              "low": 10,
+              "high": 300,
+              "type": "int"
+            },
+            "max_depth": {
+              "low": 2,
+              "high": 9,
+              "type": "int"
+            },
+            "min_child_weight": {
+              "low": 1,
+              "high": 20,
+              "type": "int"
+            },
+            "gamma": {
+              "low": 0.0,
+              "high": 2.0,
+              "type": "float"
+            },
+            "subsample": {
+              "low": 0.5,
+              "high": 0.9,
+              "type": "float"
+            },
+            "colsample_bytree": {
+              "low": 0.3,
+              "high": 1.0,
+              "type": "float"
+            },
+            "reg_lambda": {
+              "low": "1e-3",
+              "high": 10.0,
+              "type": "log"
+            },
+            "reg_alpha": {
+              "low": "1e-4",
+              "high": 5.0,
+              "type": "log"
+            },
+            "learning_rate": {
+              "low": 0.003,
+              "high": 0.2,
+              "type": "log"
+            }
+          }
+        },
+        "random_state": 5
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 13
+    }
+  ],
+  "coverage": {
+    "expected_observations": 13,
+    "scored_observations": 13,
+    "lost_observations": 0,
+    "lost_fraction": 0.0,
+    "available_in_any_seed": 13,
+    "excluded_due_to_seed_disagreement": 0,
+    "seed_coverage": [
+      {
+        "seed": 0,
+        "n_available": 13
+      },
+      {
+        "seed": 1,
+        "n_available": 13
+      },
+      {
+        "seed": 2,
+        "n_available": 13
+      },
+      {
+        "seed": 3,
+        "n_available": 13
+      },
+      {
+        "seed": 4,
+        "n_available": 13
+      },
+      {
+        "seed": 5,
+        "n_available": 13
+      }
+    ],
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+  },
+  "selected_by": "training-only chronological validation",
+  "assessment_role": "chronological_later_evaluation"
+}

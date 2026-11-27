@@ -1,0 +1,117 @@
+{
+  "metrics": {
+    "n": 8,
+    "rmse": 0.07320225886614515,
+    "mae": 0.061035418510437034,
+    "sigma_evaluation": 0.07806247497998006,
+    "nrmse": 0.9377394053278305,
+    "r2": 0.12064480769540697
+  },
+  "details": [
+    {
+      "family": "gp",
+      "variant": "gp_04",
+      "input_features": [
+        "Wind speed x (m/s)",
+        "Wind speed y (m/s)",
+        "Atmospheric pressure (mBar)",
+        "Longwave (IR) radiation (W/m2)",
+        "Shortwave (solar) radiation (W/m2)",
+        "24hr precipitation total (mm)",
+        "Air temperature (°C)",
+        "Humidity (%)",
+        "SCADA - pH",
+        "SCADA - Temperature (°C)",
+        "Pfl - Water temperature (°C)",
+        "Pfl - Sp Cond (microS_cm)",
+        "Pfl - pH",
+        "Pfl - DO (% Sat)",
+        "Pfl - Turbidity (FNU)",
+        "Pfl - fDOM (RFU)",
+        "Pfl - fDOM (QSU)",
+        "Pfl - Water temperature (°C) [35 m]",
+        "Pfl - Sp Cond (microS_cm) [35 m]",
+        "Pfl - pH [35 m]",
+        "Pfl - DO (% Sat) [35 m]",
+        "Pfl - Turbidity (FNU) [35 m]",
+        "Pfl - fDOM (RFU) [35 m]",
+        "Pfl - fDOM (QSU) [35 m]",
+        "pH_state"
+      ],
+      "seed": 0,
+      "n_train_observations": 16,
+      "n_train_rows": 16,
+      "horizon": 0,
+      "uncertainty": false,
+      "training_observations": [
+        "segment_2022040412.csv",
+        "segment_2022050212.csv",
+        "segment_2022060112.csv",
+        "segment_2022080112.csv",
+        "segment_2022082912.csv",
+        "segment_2022091912.csv",
+        "segment_2022101712.csv",
+        "segment_2022111412.csv",
+        "segment_2023050812.csv",
+        "segment_2023060512.csv",
+        "segment_2023070312.csv",
+        "segment_2023073112.csv",
+        "segment_2023082812.csv",
+        "segment_2023092512.csv",
+        "segment_2023102312.csv",
+        "segment_2023112012.csv"
+      ],
+      "steps": 1,
+      "hyperparameters": {
+        "kernel": "matern52",
+        "ard": true,
+        "ard_min_samples_per_dim": 1.0,
+        "input_standardize": true,
+        "target_standardize": true,
+        "early_stop_metric": "val_rmse",
+        "early_stop_alpha": 0.5,
+        "lengthscale_min": 0.05,
+        "lengthscale_max": 10.0,
+        "noise_min": 1e-05,
+        "noise_max": 1.0,
+        "outputscale_prior": {
+          "type": "gamma",
+          "shape": 2.0,
+          "rate": 0.15
+        },
+        "noise_prior": {
+          "type": "gamma",
+          "shape": 1.5,
+          "rate": 0.5
+        },
+        "learning_rate": 0.01,
+        "num_epochs": 250,
+        "patience": 20,
+        "max_train_size": 5000,
+        "early_stop_min_epochs": 50,
+        "revision_fixed_steps": 1
+      },
+      "output_constraint": "nonnegative-measured-level-v1",
+      "negative_prediction_floors": 0,
+      "prediction_clips": 0,
+      "n_available_predictions": 8
+    }
+  ],
+  "coverage": {
+    "expected_observations": 13,
+    "scored_observations": 8,
+    "lost_observations": 5,
+    "lost_fraction": 0.3846153846153846,
+    "available_in_any_seed": 8,
+    "excluded_due_to_seed_disagreement": 0,
+    "seed_coverage": [
+      {
+        "seed": 0,
+        "n_available": 8
+      }
+    ],
+    "seed_coverage_policy": "intersection: require a prediction from every requested seed"
+  },
+  "selected_by": "training-only chronological validation",
+  "assessment_role": "chronological_later_evaluation"
+}

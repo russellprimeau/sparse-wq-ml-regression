@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "sparse-wq-ml-regression"
+abstract: >-
+  Code and data to reproduce the data-driven results of a study forecasting
+  laboratory-measured lake water quality from native profiler, intake and weather
+  series with Gaussian process, multiple linear regression and XGBoost models.
+authors:
+  - family-names: Primeau
+    given-names: Russell
+    orcid: "https://orcid.org/0009-0003-7277-3504"
+    affiliation: "Department of Ocean Operations and Civil Engineering, NTNU"
+  - family-names: Han
+    given-names: Peihua
+    orcid: "https://orcid.org/0000-0002-2990-5896"
+    affiliation: "Department of Ocean Operations and Civil Engineering, NTNU"
+  - family-names: Zhang
+    given-names: Houxiang
+    orcid: "https://orcid.org/0000-0003-0122-0964"
+    affiliation: "Department of Ocean Operations and Civil Engineering, NTNU"
+  - family-names: Seidu
+    given-names: Razak
+    orcid: "https://orcid.org/0000-0002-3137-0915"
+    affiliation: "Department of Ocean Operations and Civil Engineering, NTNU"
+  - family-names: Li
+    given-names: Guoyuan
+    orcid: "https://orcid.org/0000-0001-7553-0899"
+    affiliation: "Department of Ocean Operations and Civil Engineering, NTNU"
+repository-code: "https://github.com/russellprimeau/sparse-wq-ml-regression"
+license: GPL-3.0-only
+keywords:
+  - water quality
+  - forecasting
+  - hydroinformatics
+preferred-citation:
+  type: article
+  status: in-preparation
+  title: "Predicting Sparsely Sampled Water-Quality Parameters from Environmental Records in a Drinking-Water Reservoir"
+  authors:
+    - family-names: Primeau
+      given-names: Russell
+      orcid: "https://orcid.org/0009-0003-7277-3504"
+    - family-names: Han
+      given-names: Peihua
+      orcid: "https://orcid.org/0000-0002-2990-5896"
+    - family-names: Zhang
+      given-names: Houxiang
+      orcid: "https://orcid.org/0000-0003-0122-0964"
+    - family-names: Seidu
+      given-names: Razak
+      orcid: "https://orcid.org/0000-0002-3137-0915"
+    - family-names: Li
+      given-names: Guoyuan
+      orcid: "https://orcid.org/0000-0001-7553-0899"
